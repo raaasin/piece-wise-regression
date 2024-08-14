@@ -20,7 +20,7 @@ The algorithm utilizes mini linear regressions to divide the dataset into smalle
 Clone the repository:
 
 ```bash
-git clone https://github.com/matrix-viit/reg-linear-forest
+git clone [https://github.com/matrix-viit/reg-linear-forest](https://github.com/raaasin/piece-wise-regression)
 ```
 
 ### Usage Example
