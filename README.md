@@ -53,11 +53,3 @@ forest.plot_predictions(data, new_x, predicted_prices)
 - `nearest_weight`: Weight assigned to nearest segments for prediction aggregation (default: 0.4)
 - `rest_weight`: Weight assigned to rest of the segments for prediction aggregation (default: 0.6)
 
-## Contributions
-
-Contributions and feature requests are welcome! Feel free to submit issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-"# reg-linear-forest" 
