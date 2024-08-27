@@ -74,7 +74,6 @@ class MiniLinearForest:
         plt.scatter(new_x, predicted_prices, c='g', marker='o', label='Predicted Values')
         plt.legend()
         plt.show()
-
 """
 # Example usage
 data = {'X': [1, 2, 3, 4, 5], 'Y': [2, 3, 5, 7, 9]}  # Sample X and Y values
