@@ -29,7 +29,6 @@ class MiniLinearForest:
             self.intercepts.append(lr.intercept_[0])
             self.slopes.append(lr.coef_[0][0])
 
-
     def predict(self, new_x):
         predicted_prices = []
         for area in new_x:
