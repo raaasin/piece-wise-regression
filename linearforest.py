@@ -14,10 +14,8 @@ class MiniLinearForest:
     def train(self, data):
         if isinstance(data, dict):
             data = pd.DataFrame(data)
-
         x = data['X'].values.reshape(-1, 1)
         y = data['Y'].values.reshape(-1, 1)
-
         sorted_indices = np.argsort(x.flatten())
         x_sorted = x[sorted_indices]
         y_sorted = y[sorted_indices]
