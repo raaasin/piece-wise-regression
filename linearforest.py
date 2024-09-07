@@ -37,7 +37,7 @@ class MiniLinearForest:
             
             for i, slope in enumerate(self.slopes):
                 predicted_price = self.intercepts[i] + slope * area
-                if i < self.nearest_segments:  # Considering the nearest segments based on user input
+                if i < self.nearest_segments: 
                     nearest_weighted_sum += self.nearest_weight * predicted_price
                     nearest_count += 1
                 else:
@@ -46,13 +46,15 @@ class MiniLinearForest:
 
             if nearest_count > 0 and rest_count > 0:
                 weighted_avg_prediction = (nearest_weighted_sum / nearest_count) + (rest_weighted_sum / rest_count)
+
             elif nearest_count > 0:
                 weighted_avg_prediction = nearest_weighted_sum / nearest_count
+
             else:
                 weighted_avg_prediction = rest_weighted_sum / rest_count
-            
-            predicted_prices.append(weighted_avg_prediction)
 
+            predicted_prices.append(weighted_avg_prediction)
+            
         return predicted_prices
 
     def plot_predictions(self, data, new_x, predicted_prices):
