@@ -5,7 +5,6 @@ import pandas as pd
 
 class MiniLinearForest:
     def __init__(self, nearest_segments=2, nearest_weight=0.4, rest_weight=0.6):
-        
         self.intercepts =[]
         self.slopes =[]
         self.nearest_weight = nearest_weight
