@@ -34,7 +34,6 @@ class MiniLinearForest:
             rest_weighted_sum = 0
             nearest_count = 0
             rest_count = 0
-            
             for i, slope in enumerate(self.slopes):
                 predicted_price = self.intercepts[i] + slope * area
                 if i < self.nearest_segments: 
