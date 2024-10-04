@@ -52,7 +52,6 @@ class MiniLinearForest:
             else:
                 weighted_avg_prediction = rest_weighted_sum / rest_count
 
-
             predicted_prices.append(weighted_avg_prediction)
             
         return predicted_prices
