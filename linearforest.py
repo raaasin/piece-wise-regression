@@ -72,6 +72,7 @@ class MiniLinearForest:
         plt.show()
 """
 # Example 
+
 data = {'X': [1, 2, 3, 4, 5], 'Y': [2, 3, 5, 7, 9]}  # Sample X and Y values
 new_x = [1.5, 2.5, 3.5, 6] #new values
 forest = MiniLinearForest(nearest_segments=3, nearest_weight=0.7, rest_weight=0.3)
