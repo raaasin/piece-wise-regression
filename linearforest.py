@@ -42,18 +42,13 @@ class MiniLinearForest:
                 else:
                     rest_weighted_sum += self.rest_weight * predicted_price
                     rest_count += 1
-
             if nearest_count > 0 and rest_count > 0:
                 weighted_avg_prediction = (nearest_weighted_sum / nearest_count) + (rest_weighted_sum / rest_count)
-
             elif nearest_count > 0:
                 weighted_avg_prediction = nearest_weighted_sum / nearest_count
-
             else:
                 weighted_avg_prediction = rest_weighted_sum / rest_count
-
-            predicted_prices.append(weighted_avg_prediction)
-            
+            predicted_prices.append(weighted_avg_prediction)            
         return predicted_prices
 
     def plot_predictions(self, data, new_x, predicted_prices):
