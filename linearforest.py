@@ -19,7 +19,6 @@ class MiniLinearForest:
         sorted_indices = np.argsort(x.flatten())
         x_sorted = x[sorted_indices]
         y_sorted = y[sorted_indices]
-
         for i in range(len(x_sorted) - 1):
             lr = LinearRegression()
             lr.fit(x_sorted[i:i+2], y_sorted[i:i+2])
