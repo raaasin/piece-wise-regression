@@ -22,7 +22,6 @@ class MiniLinearForest:
         for i in range(len(x_sorted) - 1):
             lr = LinearRegression()
             lr.fit(x_sorted[i:i+2], y_sorted[i:i+2])
-
             self.intercepts.append(lr.intercept_[0])
             self.slopes.append(lr.coef_[0][0])
 
