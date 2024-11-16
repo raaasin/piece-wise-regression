@@ -56,6 +56,7 @@ class MiniLinearForest:
         plt.xlabel('X')
         plt.ylabel('Y')
         plt.grid(True)
+        
         for i in range(len(self.intercepts)):
             plt.plot([data['X'].iloc[i], data['X'].iloc[i+1]], 
                      [self.intercepts[i] + self.slopes[i] * data['X'].iloc[i], self.intercepts[i] + self.slopes[i] * data['X'].iloc[i+1]], 
