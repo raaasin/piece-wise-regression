@@ -53,8 +53,6 @@ class MiniLinearForest:
         plt.figure(figsize=(8, 6))
         plt.scatter(data['X'], data['Y'], label='Original Data')
         plt.title('Piecewise Linear Model, Predicted Values (Weighted Aggregation)')
-        
-        
         plt.xlabel('X')
         plt.ylabel('Y')
         plt.grid(True)
