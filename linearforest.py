@@ -61,7 +61,6 @@ class MiniLinearForest:
                      [self.intercepts[i] + self.slopes[i] * data['X'].iloc[i], self.intercepts[i] + self.slopes[i] * data['X'].iloc[i+1]], 
                      c='r')
 
-                     
         plt.scatter(new_x, predicted_prices, c='g', marker='o', label='Predicted Values')
         plt.legend()
         plt.show()
