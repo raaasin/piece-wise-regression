@@ -48,7 +48,6 @@ class MiniLinearForest:
                 weighted_avg_prediction = rest_weighted_sum / rest_count
             predicted_prices.append(weighted_avg_prediction)            
         return predicted_prices
-
     def plot_predictions(self, data, new_x, predicted_prices):
         plt.figure(figsize=(8, 6))
         plt.scatter(data['X'], data['Y'], label='Original Data')
